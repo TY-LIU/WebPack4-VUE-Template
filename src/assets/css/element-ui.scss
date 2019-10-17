@@ -1,0 +1,59 @@
+// 覆盖一些element-ui样式
+
+.el-button .fas {
+    margin-right: 5px;
+}
+
+.el-dialog__body {
+    max-height: 55vh;
+    overflow: auto;
+}
+
+.el-breadcrumb__inner, .el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+
+.el-table--mini, .el-table--small, .el-table__expand-icon {
+    font-size: 14px;
+}
+
+.el-cascader-panel {
+    .el-cascader-menu {
+        overflow: hidden;
+
+        .el-scrollbar__wrap {
+            overflow-x: hidden;
+        }
+    }
+}
+
+.status-col {
+    .cell {
+        padding: 0 10px;
+        text-align: center;
+
+        .el-tag {
+            margin-right: 0px;
+        }
+    }
+}
+
+// dropdown
+.el-dropdown-menu {
+    a {
+        display: block
+    }
+}
+
+// el-select
+.el-select, .el-cascader__tags {
+    .el-tag {
+        color: white;
+        background-color: #409eff;
+    }
+
+    .el-tag__close.el-icon-close {
+        background-color: #f56c6c;
+        color: white;
+    }
+}

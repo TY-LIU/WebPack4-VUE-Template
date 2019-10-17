@@ -1,0 +1,471 @@
+/*
+ * Author: LTY
+ * Create Time: 2019-04-10 16:18
+ * Description: 公共CSS
+ */
+
+body {
+    height: 100%;
+    min-width: 1300px;
+    color: #3C3C3C;
+    background-color: #f4f4f4;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+
+}
+
+label {
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-border {
+    border: none;
+}
+
+.padding-content {
+    padding: 4px 0;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+a, a:focus {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.theme-color {
+    color: $color-theme;
+}
+
+code {
+    background: #eef1f6;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 36px;
+    font-size: 15px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
+    a {
+        color: $color-theme;
+        cursor: pointer;
+
+        &:hover {
+            color: rgba(244, 67, 54, 0.8);
+        }
+    }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+    line-height: 16px;
+}
+
+.multiselect--active {
+    z-index: 1000 !important;
+}
+
+.main1200 {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+/* 从页面布局上隐藏元素，从布局上隐藏元素 */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    @extend .flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    @extend .flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+        flex: 1;
+
+        &.no-equality {
+            flex: inherit;
+        }
+    }
+}
+
+.flex-right {
+    @extend .flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.flex-left {
+    @extend .flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.flex-vertical {
+    @extend .flex;
+    align-items: center;
+}
+
+.flex-middle {
+    @extend .flex;
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.color-placeholder {
+    color: #C0C4CC;
+}
+
+.W100 {
+    width: 100% !important;
+}
+
+.H100 {
+    height: 100% !important;
+}
+
+.FX0 {
+    flex: initial;
+}
+
+.FX1 {
+    flex: 1 !important;
+}
+
+.FX2 {
+    flex: 2 !important;
+}
+
+.FX3 {
+    flex: 3 !important;
+}
+
+.FX4 {
+    flex: 4 !important;
+}
+
+.FX5 {
+    flex: 5 !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.block {
+    display: block;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.disabled {
+    opacity: .7;
+    pointer-events: none;
+}
+
+.disabled-no-drop {
+    opacity: .7;
+    cursor: no-drop;
+}
+
+.list-un-styled {
+    list-style: none;
+}
+
+.inline-list {
+    li {
+        display: inline-block;
+    }
+}
+
+/* 定义文本下划线 */
+.UnLine {
+    text-decoration: underline;
+}
+
+.DisunLine {
+    text-decoration: none;
+}
+
+/* 定位关系 */
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+/* 定义字体样式，由大写字母F开头,表示FONT */
+
+/* 字体样式 */
+.FB {
+    font-weight: bold;
+}
+
+.FN {
+    font-weight: normal;
+}
+
+.FI {
+    font-style: italic;
+}
+
+/* 字体大小 */
+.F10 {
+    font-size: 10px;
+}
+
+.F11 {
+    font-size: 11px;
+}
+
+.F12 {
+    font-size: 12px;
+}
+
+.F13 {
+    font-size: 13px;
+}
+
+.F15 {
+    font-size: 15px;
+}
+
+.F14 {
+    font-size: 14px;
+}
+
+.F16 {
+    font-size: 16px;
+}
+
+.F18 {
+    font-size: 18px;
+}
+
+.F20 {
+    font-size: 20px;
+}
+
+/*自定义等待框样式*/
+.messageWait {
+    background-color: #fff;
+    color: #101010;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0);
+
+    i {
+        animation: rotating 1.7s infinite ease;
+        font-size: 16px;
+        margin: 0 5px;
+    }
+}
+
+/*加载失败样式*/
+.loadError {
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+    .errorIcon {
+        height: 92px;
+        background: url(~sysStatic/images/error/loadError.png) no-repeat center;
+        background-size: contain !important;
+
+        &.modular {
+            background: url(~sysStatic/images/error/modular.png) no-repeat center;
+        }
+
+        &.company {
+            background: url(~sysStatic/images/error/company.png) no-repeat center;
+        }
+
+        &.message {
+            background: url(~sysStatic/images/error/message.png) no-repeat center;
+        }
+
+        &.role {
+            background: url(~sysStatic/images/error/role.png) no-repeat center;
+        }
+
+        &.jursidc {
+            background: url(~sysStatic/images/error/jursidc.png) no-repeat center;
+        }
+
+        &.certificate {
+            background: url(~sysStatic/images/error/certificates.png) no-repeat center;
+        }
+
+        &.data {
+            background: url(~sysStatic/images/error/data.png) no-repeat center;
+        }
+
+        &.success {
+            background: url(~sysStatic/images/error/success.png) no-repeat center;
+        }
+
+        &.product {
+            background: url(~sysStatic/images/error/product.png) no-repeat center;
+        }
+
+        &.type {
+            background: url(~sysStatic/images/error/type.png) no-repeat center;
+        }
+
+    }
+
+    .errorInfo {
+        color: #bbb;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+.alert {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 10px 16px;
+
+    .check {
+        cursor: pointer;
+    }
+
+    .el-alert__icon.is-big {
+        font-size: 30px;
+        width: 30px;
+    }
+
+    .el-alert__title {
+        font-size: 16px;
+    }
+
+    .el-alert__description {
+        font-size: 14px;
+    }
+}
+
+/*骨架图加载提示*/
+.skeleton {
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        display: block;
+        /*注意这里top和left，让白光移动到图片左上角，
+        后续的划过动画也是依靠这两个属性*/
+        top: -200%;
+        left: -100%;
+        /*定义白光的宽高*/
+        width: 50%;
+        height: 300%;
+        /*旋转角度，你也可以调整*/
+        transform: rotate(45deg);
+        /*使用渐变来实现白光*/
+        background: linear-gradient(to left, rgba(255, 255, 255, .05) 20%,
+            rgba(255, 255, 255, .6) 65%, rgba(255, 255, 255, .05) 100%);
+        content: '';
+        z-index: 2;
+        position: absolute;
+        animation: crossed 2s infinite linear;
+    }
+}
+
+@keyframes crossed {
+    0%, 75% {
+        top: -200%;
+        left: -100%;
+    }
+    100% {
+        top: -50px;
+        left: 100%;
+    }
+}

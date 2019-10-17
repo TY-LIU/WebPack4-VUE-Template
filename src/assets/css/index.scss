@@ -1,0 +1,17 @@
+/*
+ * Author: LTY
+ * Create Time: 2019-10-15 15:11
+ * Description: 全局样式
+ */
+@import './variables';
+@import './element-ui';
+@import './common';
+
+/*进度条颜色*/
+#nprogress .bar {
+    background: $color-theme;
+}
+
+#app {
+    height: 100%;
+}
